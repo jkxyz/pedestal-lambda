@@ -1,4 +1,4 @@
-(defproject me.joshkingsley/pedestal.lambda "0.1.0-SNAPSHOT"
+(defproject me.joshkingsley/pedestal.lambda "0.1.0"
   :description "Chain provider for Pedestal services running on AWS Lambda."
   :url "https://github.com/jkxyz/pedestal-lambda"
   :license {:name "Eclipse Public License"

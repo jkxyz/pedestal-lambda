@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion: 2010-09-09
+Transform:
+  - AWS::Serverless-2016-10-31
+
+Resources:
+  LambdaProxy:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: target/example-SNAPSHOT-standalone.jar
+      Handler: example.handler::handleRequest
+      Runtime: java8
+      MemorySize: 1856
+      Timeout: 90
+      Events:
+        RootRequestEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: ANY
+        RequestEvent:
+          Type: Api
+          Properties:
+            Path: /{lambdaproxy+}
+            Method: ANY

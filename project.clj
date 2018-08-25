@@ -8,4 +8,5 @@
                  [io.pedestal/pedestal.service "0.5.4"]
                  [io.pedestal/pedestal.jetty "0.5.4"]
                  [ring/ring-core "1.7.0-RC1"]
-                 [com.amazonaws/aws-lambda-java-core "1.2.0"]])
+                 [com.amazonaws/aws-lambda-java-core "1.2.0"]]
+  :deploy-repositories {"releases" {:url "https://repo.clojars.org" :creds :gpg}})

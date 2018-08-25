@@ -25,3 +25,10 @@ See the `example/` directory for a project running a simple HTTP handler.
 ;; Executes the interceptor chain and streams the response back to API Gateway.
 (handle service-with-handler input output context)
 ```
+
+To Do
+-----
+
+- [ ] Error handling
+- [ ] Improve API
+- [ ] Tests

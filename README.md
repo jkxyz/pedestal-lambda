@@ -26,6 +26,23 @@ See the `example/` directory for a project running a simple HTTP handler.
 (handle service-with-handler input output context)
 ```
 
+Development
+-----------
+
+### Local integration testing
+
+Install the following tools:
+
+* Docker
+* [AWS SAM CLI](https://docs.aws.amazon.com/lambda/latest/dg/sam-cli-requirements.html)
+
+Build the test handler and run the local API Gateway:
+
+```
+$ lein with-profile local-dev uberjar
+$ sam local start-api -t dev-sam-template.yml
+```
+
 To Do
 -----
 
